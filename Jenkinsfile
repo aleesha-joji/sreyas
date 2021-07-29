@@ -9,7 +9,7 @@ pipeline {
             steps { 
                 script {
                     docker.withTool('docker') {
-                        docker.withRegistry('https://artifactory.dagility.com', 'sreyas-registry'){
+                        docker.withRegistry('https://artifactory.dagility.com', 'aleesha-registry'){
                             docker.build(registry + "ubuntu:apache").push()
                         }
                     }
