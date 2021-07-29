@@ -1,4 +1,4 @@
 FROM ubuntu:18.04
-RUN apt-get update && \
-    apt-get install -y vim && \
-    apt-get clean
+CMD apt-get -y update
+CMD apt-get install -y vim
+RUN apt-get install -y nano
